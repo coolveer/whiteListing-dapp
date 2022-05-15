@@ -129,11 +129,13 @@ export default function Home() {
         <meta name="description" content="Whitelist Dapp" />
       </Head>
       <div className={styles.main}>
-        <h1 className={styles.title}>welcome to crypto dev</h1>
-        <div className={styles.description}>
-          {numOfWhitelisted} have already joind
+        <div>
+          <h1 className={styles.title}>welcome to crypto dev</h1>
+          <div className={styles.description}>
+            {numOfWhitelisted} have already joind
+          </div>
+          {renderButton()}
         </div>
-        {renderButton()}
         <div>
           <img src="./crypto-devs.svg" className={styles.image} alt="" />
         </div>
